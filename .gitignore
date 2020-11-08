@@ -4,3 +4,4 @@ article/__pycache__
 venv/
 db.sqlite3
 secrets.json
+.git/
