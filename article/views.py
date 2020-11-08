@@ -41,6 +41,9 @@ class ArticleDeleteView(DeleteView):
     template_name = 'delete.html'
     success_url = reverse_lazy('index')
 
+    def get_success_url(self):
+        return reverse('list')
+
 
 class ArticleListView(ListView):
     model = Article
